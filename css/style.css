@@ -66,11 +66,11 @@ span {
 }
 
 .line1 {
-  color: #9CD9F0;
-  -webkit-animation: type .5s 1s steps(20, end) forwards;
-  -moz-animation: type .5s 1s steps(20, end) forwards;
-  -o-animation: type .5s 1s steps(20, end) forwards;
-  animation: type .5s 1s steps(20, end) forwards;
+  color: #9cd9f0;
+  -webkit-animation: type 0.5s 1s steps(20, end) forwards;
+  -moz-animation: type 0.5s 1s steps(20, end) forwards;
+  -o-animation: type 0.5s 1s steps(20, end) forwards;
+  animation: type 0.5s 1s steps(20, end) forwards;
 }
 
 .cursor1 {
@@ -81,11 +81,11 @@ span {
 }
 
 .line2 {
-  color: #CDEE69;
-  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-  -moz-animation: type .5s 4.25s steps(20, end) forwards;
-  -o-animation: type .5s 4.25s steps(20, end) forwards;
-  animation: type .5s 4.25s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.5s 4.25s steps(20, end) forwards;
+  -moz-animation: type 0.5s 4.25s steps(20, end) forwards;
+  -o-animation: type 0.5s 4.25s steps(20, end) forwards;
+  animation: type 0.5s 4.25s steps(20, end) forwards;
 }
 
 .cursor2 {
@@ -96,11 +96,11 @@ span {
 }
 
 .line3 {
-  color: #E09690;
-  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
-  -moz-animation: type .5s 7.5s steps(20, end) forwards;
-  -o-animation: type .5s 7.5s steps(20, end) forwards;
-  animation: type .5s 7.5s steps(20, end) forwards;
+  color: #e09690;
+  -webkit-animation: type 0.5s 7.5s steps(20, end) forwards;
+  -moz-animation: type 0.5s 7.5s steps(20, end) forwards;
+  -o-animation: type 0.5s 7.5s steps(20, end) forwards;
+  animation: type 0.5s 7.5s steps(20, end) forwards;
 }
 
 .cursor3 {
@@ -112,10 +112,14 @@ span {
 
 .line4 {
   color: #fff;
-  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
-  -moz-animation: type .5s 10.75s steps(20, end) forwards;
-  -o-animation: type .5s 10.75s steps(20, end) forwards;
-  animation: type .5s 10.75s steps(20, end) forwards;
+  -webkit-animation: type 0.5s 10.75s steps(20, end) forwards;
+  -moz-animation: type 0.5s 10.75s steps(20, end) forwards;
+  -o-animation: type 0.5s 10.75s steps(20, end) forwards;
+  animation: type 0.5s 10.75s steps(20, end) forwards;
+}
+
+.line4 a {
+  color: #fff;
 }
 
 .cursor4 {
