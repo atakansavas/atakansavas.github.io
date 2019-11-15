@@ -1,3 +1,10 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/joshcummingsdesign/pen/qOKaWd.
 
- Terminal window animation built using pure CSS.
+## atakansavas.github.io
+
+Bu proje kisisel sayfamdir. Online cv olarak kullanmayi hedefledim.
+
+Icerisindeki metinler elle degistirdigim, guncel tutmaya calistigim datalardir.
+
+Projeyi kisisel isteklerim icin olusturdum.
+
+## https://atakansavas.github.io/
