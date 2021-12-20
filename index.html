@@ -1,1104 +1,515 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
 
 <head>
+  <title>Victor Stasek | Developer | stasekvictordev@gmail.com</title>
+  <meta charset="UTF-8">
+  <meta name="keywords"
+    content="victor stasek, victor t. stasek, developer, resume, columbus, victor, python, ruby, development" />
+  <meta name="description" content="Victor Stasek - Developer - Resume" />
+  <meta name="author" content="Victor Stasek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-88585615-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <link rel="stylesheet" type="text/css" href="assets/resume.css" media="all">
+  <!--<link rel="stylesheet" type="text/css" href="resume-print.css" media="print">-->
 
-        gtag('config', 'UA-88585615-2');
-    </script>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: monospace;
+      color: #555;
+      width: 70%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
+    a {
+      color: #0ba893;
+    }
 
-    <meta charset="utf-8" />
-    <title>AtakanSavas | Online Cv</title>
-    <meta name="author"
-        content="atakansavas" />
-    <meta name="keywords"
-        content="atakan savas, net and js developer" />
-    <meta name="description"
-        content="atakan savas online resume" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!-- Font Awesome -->
-    <!-- <link type="text/css" media="all" href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
-        integrity="sha384-DmABxgPhJN5jlTwituIyzIUk6oqyzf3+XuP7q3VfcWA2unxgim7OSSZKKf0KSsnh"
-        crossorigin="anonymous">
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #f04848;
+      margin: 0;
+    }
 
-    <!-- Libs CSS -->
-    <link type="text/css"
-        media="all"
-        href="assets/boostrap-files/css/bootstrap.min.css"
-        rel="stylesheet" />
-    <!-- Optionally add helpers - button and/or media -->
-    <link rel="stylesheet"
-        href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"
-        type="text/css"
-        media="screen" />
-    <!-- Add fancyBox main CSS files -->
-    <link rel="stylesheet"
-        type="text/css"
-        href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5"
-        media="screen" />
-    <!-- Important Owl stylesheet -->
-    <link rel="stylesheet"
-        href="assets/css/owl.carousel.css">
-    <link rel="stylesheet"
-        href="assets/css/slider.css">
-    <!-- Default Theme -->
-    <link rel="stylesheet"
-        href="assets/css/owl.theme.css">
-    <!-- Animate CSS -->
-    <link type="text/css"
-        media="all"
-        href="assets/css/animate.css"
-        rel="stylesheet" />
-    <!-- Template CSS -->
-    <link rel="stylesheet"
-        type="text/css"
-        href="assets/css/stickup.css" />
-    <link rel="stylesheet"
-        type="text/css"
-        href="assets/css/component.css" />
-    <link type="text/css"
-        media="all"
-        href="assets/css/style.css"
-        rel="stylesheet" />
-    <!-- Switcher CSS -->
-    <link type="text/css"
-        media="all"
-        href="assets/css/switcher.css"
-        rel="stylesheet" />
-    <link href="assets/css/colour-scheme/color-blue.css"
-        rel="stylesheet"
-        type="text/css"
-        data-color="color-blue"
-        media="all"
-        id="stylesheet-new">
-    <!-- Responsive CSS -->
-    <link type="text/css"
-        media="all"
-        href="assets/css/respons.css"
-        rel="stylesheet" />
-    <!-- Favicons -->
-    <link rel="apple-touch-icon"
-        sizes="144x144"
-        href="assets/img/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon"
-        sizes="114x114"
-        href="assets/img/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon"
-        sizes="72x72"
-        href="assets/img/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon"
-        href="assets/img/favicons/apple-touch-icon.png" />
-    <link rel="shortcut icon"
-        href="assets/img/favicons/favicon.png" />
-    <!-- Google Fonts -->
-    <link
-        href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic'
-        rel='stylesheet'
-        type='text/css'>
+    .comment {
+      color: #058501;
+      font-style: italic;
+    }
 
+    .bio {
+      text-align: center;
+      letter-spacing: 0;
+    }
+
+    .bio h1 {
+      font-size: 200%;
+      margin-top: 2%
+    }
+
+    .bio h2 {
+      font-size: 150%;
+    }
+
+    .contact-info {
+      font-size: 90%;
+      margin-top: 1%;
+    }
+
+    .section-title h3 {
+      border-bottom: thin solid;
+      margin-bottom: 0.5%;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section-qualifier,
+    .section-head {
+      font-weight: bold;
+    }
+
+    .proficiency {
+      font-style: italic;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Load page -->
-    <div class="animationload">
-        <div class="loader"></div>
+  <div class="bio">
+    <h1>Ahmet Atakan Savaş</h1>
+    <h2>Fullstack Software Developer</h2>
+    <div class="contact-info">
+      <h3><a href="mailto:a.savas@hotmail.com.tr">a.savas@hotmail.com.tr</a></h3>
     </div>
-    <!-- End load page -->
+  </div>
+  <!--bio-->
 
-    <!-- Start Menu-navigation section -->
-    <div class="navbar-wrapper"
-        role="navigation">
-        <div class="container navigation-top">
-            <div class="navwrapper">
-                <div class="navbar navbar-inverse navbar-static-top">
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="menuItem active"><a href="#navhome">Home</a></li>
-                            <li class="menuItem"><a href="#navprofile">Profile</a></li>
-                            <li class="menuItem"><a href="#navresume">Resume</a></li>
-                            <li class="menuItem"><a href="#navblog">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Menu-navigation section -->
-
-    <div id='contents'
-        class="contents">
-        <div id="wraper"
-            class="wraper-card">
-
-            <!-- Start Home section -->
-            <section id="navhome">
-                <!-- Start Home-header section -->
-                <nav class="home-header border-bottom padding-block">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                                <!-- Your foto -->
-                                <div class="foto">
-                                    <!-- for man -->
-                                    <img src="efes.jpg"
-                                        alt="Ukieweb">
-                                    <!-- for women -->
-                                    <!-- <img src="./assets/img/photo_female.png" alt="Ukieweb"> -->
-                                </div>
-                                <!-- end your foto -->
-                            </div>
-                            <div class="col-xs-12 col-sm-7 col-lg-7">
-                                <!-- Your Name -->
-                                <h1 class="title">Atakan Savas</h1>
-                                <!-- Your Profession -->
-                                <h3 class="sub-title">.net & js developer @Istanbul</h3>
-                                <!-- social icon -->
-                                <div class="social">
-                                    <ul class="animated"
-                                        data-animation="fadeIn"
-                                        data-animation-delay="600">
-                                        <!-- social icons -->
-                                        <li><a href='https://www.linkedin.com/in/hiata/'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fab fa-linkedin"></i></a></li>
-                                        <li><a href='https://github.com/atakansavas'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fab fa-github-alt"></i></a></li>
-                                        <li><a href='https://medium.com/@atakansava'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fab fa-medium"></i></a></li>
-                                        <li><a href='https://www.udemy.com/user/apulcuatakansava/'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fa fa-briefcase"></i></a></li>
-                                        <li><a href='https://www.tr.freelancer.com/u/atknsvs'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fa fa-comments"></i></a></li>
-                                        <li><a href='https://stackoverflow.com/users/5620868/atakan-savaş'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fas fa-file"></i></a></li>
-                                        <li><a href='https://soundcloud.com/atakansavas'
-                                                class="ukie-icons hover-animate"
-                                                href="#"><i class="fab fa-soundcloud"></i></a></li>
-
-                                        <!--
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-behance"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-digg"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-deviantart"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-envelope-square"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-delicious"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-dropbox"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-skype"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-tumblr"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-flickr"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-github-alt"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-renren"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-vk"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-xing"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-weibo"></i></a></li>
-                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-rss"></i></a></li>
-                                        -->
-                                    </ul>
-                                </div>
-                                <!-- end social icon -->
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </nav>
-                <!-- End Home-header section -->
-
-                <!-- Start Menu section -->
-                <nav class="menu"
-                    id="menu">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-
-                                <!-- start menu block (profile) -->
-                                <a href="#navprofile"
-                                    class="menu-li">
-                                    <!-- img menu block -->
-                                    <span class="foto">
-                                        <!-- for man -->
-                                        <img src="./assets/img/menu/profile.png"
-                                            class="menu-img"
-                                            data-img-name="profile"
-                                            alt="Ukieweb" />
-                                        <!-- for women -->
-                                        <!--  <img src="./assets/img/menu/profile_female.png" class="menu-img" data-img-name="profile_female" alt="Ukieweb" /> -->
-                                    </span>
-                                    <!-- name menu block -->
-                                    <span class="name">Profile</span>
-                                </a>
-                                <!-- end menu block (profile) -->
-
-                                <!-- start menu block (resume) -->
-                                <a href="#navresume"
-                                    class="menu-li">
-                                    <!-- img menu block -->
-                                    <span class="foto">
-                                        <img src="./assets/img/menu/resume.png"
-                                            class="menu-img"
-                                            data-img-name="resume"
-                                            alt="Ukieweb">
-                                    </span>
-                                    <!-- name menu block -->
-                                    <span class="name">Resume</span>
-                                </a>
-                                <!-- end menu block (resume) -->
-
-                                <!-- start menu block (blog) -->
-                                <a href="#navblog"
-                                    class="menu-li">
-                                    <!-- img menu block -->
-                                    <span class="foto">
-                                        <img src="./assets/img/menu/blog.png"
-                                            class="menu-img"
-                                            data-img-name="blog"
-                                            alt="Ukieweb">
-                                    </span>
-                                    <!-- name menu block -->
-                                    <span class="name">Blog</span>
-                                </a>
-                                <!-- end menu block (portfolio) -->
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </nav>
-                <!-- End Menu section -->
-            </section>
-            <!-- End Home section -->
-
-            <!-- Start Profile section -->
-            <section class="profile"
-                id="navprofile">
-                <!-- Start Head section -->
-                <header class="head">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                                <img class="logo-page"
-                                    src="./assets/img/profile_l.png"
-                                    alt="Ukieweb">
-                            </div>
-                            <div class="col-xs-12 col-sm-7 col-lg-7">
-                                <!-- Title Page -->
-                                <h2 class="title">Profile</h2>
-                                <!-- Description Page -->
-                                <h4 class="sub-title">A Brief About Me</h4>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </header>
-                <!-- End Head section -->
-
-                <!-- Start Content section -->
-                <section class="content border-bottom padding-block">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-7 padding-bottom">
-                                <h3 class="title">Hi all. I am a developer.</h3>
-                                <p>Many software techs, comics, jokes, gis operations, brainstorming smiling activities.
-                                </p>
-                                <p>
-                                    Actually, more. I never forget smiling and be happy. I am doing my dream job.
-                                    Learning
-                                    new things makes me feel like at the top of everest. Maybe at the coffe shop at
-                                    Amsterdam :)
-                                </p>
-                                <p>
-                                    If you want to talk with me, stay in touch. I always check my mails.
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-lg-5">
-                                <div class="block-grey">
-                                    <table>
-                                        <tr>
-                                            <td class="font-weight-m">Name</td>
-                                            <td class="text-right">Atakan Savas</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-m">Date of birth</td>
-                                            <td class="text-right">September 23, 1993</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-m">E-mail</td>
-                                            <td class="text-right"><a
-                                                    href="mailto:a.savas@hotmail.com.tr">a.savas@hotmail.com.tr</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-m">Address</td>
-                                            <td class="text-right">Istanbul | Turkey</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-m">Skype</td>
-                                            <td class="text-right">a.savas@hotmail.com.tr</td>
-                                        </tr>
-                                        <!--
-                                         <tr>
-                                             <td colspan="2" class="font-weight-m"><i class="fa fa-circle red-marker" aria-hidden="true"></i>Not available for freelance</td>
-                                         </tr>
-                                         <tr>
-                                             <td colspan="2" class="font-weight-m"><i class="fa fa-circle orange-marker" aria-hidden="true"></i>In vacation till septembre 29</td>
-                                         </tr>
-                                         -->
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End Content section -->
-
-                <!-- Start Info section -->
-                <section class="info border-bottom padding-block text-center">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">What i’m doing</h3>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <div class="circle-block ">
-                                    <span class="icon hover-animate"><i class="fab fa-microsoft"></i></span>
-                                    <span class="name hover-animate">.Net</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fab fa-js"></i></span>
-                                    <span class="name hover-animate">Javascript</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fab fa-html5"></i></span>
-                                    <span class="name hover-animate">html5</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fas fa-sync"></i></span>
-                                    <span class="name hover-animate">CI / CD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End Info section -->
-
-                <!-- Start My thoughts section -->
-                <section class="my-thoughts padding-block text-center">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">My thoughts</h3>
-                                <div class="animated">
-                                    <i class="fa fa-quote-left ukie-icons hover-animate"></i>
-                                </div>
-                                <p class="thoughts">
-                                    If a man is called to be a street sweeper, he should sweep streets even as a
-                                    Michaelangelo painted,
-                                    or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so
-                                    well
-                                    that all the hosts of heaven and earth will pause to say,
-                                    'Here lived a great street sweeper who did his job well.'
-                                </p>
-                                <h4 class="sub-title">Martin Luther King Jr</h4>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End My thoughts section -->
-            </section>
-            <!-- End Profile section -->
-
-            <!-- Start Resume section -->
-            <section class="resume"
-                id="navresume">
-                <!-- Start Head section -->
-                <header class="head">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                                <img class="logo-page"
-                                    src="./assets/img/resume_l.png"
-                                    alt="Ukieweb">
-                            </div>
-                            <div class="col-xs-12 col-sm-7 col-lg-7">
-                                <!-- Title Page -->
-                                <h2 class="title">Resume</h2>
-                                <!-- Description Page -->
-                                <h4 class="sub-title">My Skills</h4>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </header>
-                <!-- End Head section -->
-
-                <!-- Start Content section -->
-                <section class="content padding-block border-bottom">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
-                                <h3 class="title title-resume">Education</h3>
-                                <div class="block-grey">
-                                    <div id="education-slider"
-                                        class="owl-carousel owl-theme">
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td">Name</td>
-                                                    <td>Anadolu Universty</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Distance Education</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>2017-Current</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Level</td>
-                                                    <td>Management Informatin Systems</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                <b> In it ;</b>
-                                                Web design, data structures systems, programming, network systems.
-                                                <br />
-                                                <b> Management ;</b>
-                                                Management and organizations, business finance
-                                            </p>
-                                        </div>
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td">Name</td>
-                                                    <td>Sakarya Universty</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Distance Education</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>2014-2014</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Level</td>
-                                                    <td>Computer Programming</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                Algorithm, english, data management systems, system analysis.
-                                                I was also working while going to school. Hard times :)
-                                            </p>
-                                        </div>
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td">Name</td>
-                                                    <td>Umraniye Anatolian School</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>2010-2014</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Level</td>
-                                                    <td>High School - Computer Programming</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                Algorithm, english and programming lessons. I started programming
-                                                in this school.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-lg-6">
-                                <h3 class="title title-resume">Work</h3>
-                                <div class="block-grey">
-                                    <div id="work-slider"
-                                        class="owl-carousel owl-theme">
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td1">Company Name</td>
-                                                    <td>KariyerNet</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>2018 June-Current</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Post</td>
-                                                    <td>Back End Developer</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                Turkey's biggest employement platform.
-                                            </p>
-                                            <p>
-                                                Microservice architecture ,Scrum, Agile ,Net core ,CI / CD, Performance
-                                                codding,
-                                                pair programming, Unit Tests...
-                                            </p>
-                                        </div>
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td1">Company Name</td>
-                                                    <td>Imarsorgulama.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>September 2016 - June 2018</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Post</td>
-                                                    <td>Full Stack Developer</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                This project can detect illegal construction. (B-B / B-C)
-                                                Calculate buildings. Result is in 3d mode.
-                                            </p>
-                                            <p>
-                                                OOP, MVC, Soap, WCF, Geoserver,
-                                                PostgreSql, Typescript.
-                                            </p>
-                                        </div>
-
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td1">Company Name</td>
-                                                    <td>Creaup Studio</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>May 2016 - September 2016</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Post</td>
-                                                    <td>Full Stack Developer</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                My own startup. (Fith friends)
-                                            </p>
-                                            <p>
-                                                c#.net, Php Symphony, Apache Cordova, Javascript.
-                                            </p>
-                                        </div>
-
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td1">Company Name</td>
-                                                    <td>Avmeda</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>September 2015 - May 2016</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Post</td>
-                                                    <td>Full Stack Developer</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-
-                                                International software development company serving broadcast solutions.
-                                            </p>
-                                            <p>
-                                                Server based applications (TCP-IP), Signalr, WPF, Windows Services.
-                                            </p>
-                                        </div>
-
-                                        <div class="item">
-                                            <table>
-                                                <tr>
-                                                    <td class="font-weight-m width-td1">Company Name</td>
-                                                    <td>AloBiletHatti.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Address</td>
-                                                    <td>Istanbul</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Period</td>
-                                                    <td>April 2014 - September 2015</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="font-weight-m">Post</td>
-                                                    <td>Full Stack Developer</td>
-                                                </tr>
-                                            </table>
-                                            <p>
-                                                Fly ticket web site. Users can buy fly tickets. (B-B / B-C)
-                                            </p>
-                                            <p>
-                                                .Net, MVC, Mssql, Kanban,
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End Content section -->
-
-                <!-- Start Skills section -->
-                <section class="skills border-bottom padding-block">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
-                                <h3 class="title title-skills">Professional skills</h3>
-
-                                <label class="progress-bar-label">.Net (c#)</label>
-                                <div class="progress">
-                                    <div class="progress-bar"
-                                        role="progressbar"
-                                        aria-valuenow="80"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-
-                                <label class="progress-bar-label">.Net Core</label>
-                                <div class="progress">
-                                    <div class="progress-bar"
-                                        role="progressbar"
-                                        aria-valuenow="70"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-
-                                <label class="progress-bar-label">React-Native</label>
-                                <div class="progress">
-                                    <div class="progress-bar"
-                                        role="progressbar"
-                                        aria-valuenow="50"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        <span>50%</span>
-                                    </div>
-                                </div>
-
-                                <label class="progress-bar-label">Javascript</label>
-                                <div class="progress">
-                                    <div class="progress-bar"
-                                        role="progressbar"
-                                        aria-valuenow="65"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        <span>65%</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-lg-6">
-                                <h3 class="title title-skills">Additional skills</h3>
-
-                                <div class="circle-progress-block">
-                                    <div class="circle-progress">
-                                        <input type="text"
-                                            class="dial"
-                                            value="80"
-                                            data-color="#00b6f9"
-                                            data-from="0"
-                                            data-to="99" />
-                                    </div>
-                                    <label class="circle-progress-label">Communication</label>
-                                </div>
-
-                                <div class="circle-progress-block">
-                                    <div class="circle-progress">
-                                        <input type="text"
-                                            class="dial"
-                                            value="60"
-                                            data-color="#00b6f9"
-                                            data-from="0"
-                                            data-to="99" />
-                                    </div>
-                                    <label class="circle-progress-label">Ambition</label>
-                                </div>
-
-                                <div class="circle-progress-block">
-                                    <div class="circle-progress">
-                                        <input type="text"
-                                            class="dial"
-                                            value="90"
-                                            data-color="#00b6f9"
-                                            data-from="0"
-                                            data-to="99" />
-                                    </div>
-                                    <label class="circle-progress-label">Humor</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-6 language-skills">
-                                <h3 class="title title-skills">Personal skills</h3>
-                                <div class="progress">
-                                    <label class="progress-bar-label">Result Oriented</label>
-                                    <span class="ratyli"
-                                        data-rate="5"
-                                        data-ratemax="5"></span>
-                                </div>
-                                <div class="progress">
-                                    <label class="progress-bar-label">Nervous</label>
-                                    <span class="ratyli"
-                                        data-rate="2"
-                                        data-ratemax="5"></span>
-                                </div>
-
-                                <div class="progress">
-                                    <label class="progress-bar-label">Private Life</label>
-                                    <span class="ratyli"
-                                        data-rate="3"
-                                        data-ratemax="5"></span>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-lg-6 knowledge">
-                                <h3 class="title title-skills">Titles</h3>
-                                <div class="col-xs-12 col-sm-6 col-lg-6">
-                                    <ul>
-                                        <li>CI - CD (Jenkins - Octopus)</li>
-                                        <li>Scrum - Agile</li>
-                                        <li>Jira</li>
-                                        <li>Discipline</li>
-                                        <li>New Ideas</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-lg-6">
-                                    <ul>
-                                        <li>C#.Net, .Net Core</li>
-                                        <li>Javacript, React-Native, Jquery</li>
-                                        <li>Sql, Postgresql, MongoDb</li>
-                                        <li>Geoserver, Tcp/Ip, Phonegap</li>
-                                        <li>Android, Ios, Windows</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End Skills section -->
-
-
-                <!-- Start Info section -->
-                <section class="info border-bottom padding-block text-center">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">Hobbies &amp; Interest</h3>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fa fa-headphones"></i></span>
-                                    <span class="name hover-animate">Music</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fa fa-rocket"></i></span>
-                                    <span class="name hover-animate">Travelling</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fas fa-motorcycle"></i></span>
-                                    <span class="name hover-animate">Motorcycle</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fa fa-gamepad"></i></span>
-                                    <span class="name hover-animate">Fifa</span>
-                                </div>
-                                <div class="circle-block">
-                                    <span class="icon hover-animate"><i class="fas fa-tree"></i></span>
-                                    <span class="name hover-animate">Forest</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </section>
-                <!-- End Info section -->
-            </section>
-            <!-- End Resume section -->
-
-            <!-- Start Blog section -->
-            <section class="blog"
-                id="navblog">
-                <!-- Start Head section -->
-                <header class="head">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                                <img class="logo-page"
-                                    src="./assets/img/blog_l.png"
-                                    alt="Ukieweb">
-                            </div>
-                            <div class="col-xs-12 col-sm-7 col-lg-7">
-                                <!-- Title Page -->
-                                <h2 class="title">Blog</h2>
-                                <!-- Description Page -->
-                                <h4 class="sub-title">I write here my thoughts</h4>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </header>
-                <!-- End Head section -->
-
-                <div class="padding-block">
-                    <!-- start container -->
-                    <div class="container">
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-6">
-                                <!-- start post -->
-                                <div class="post">
-                                    <!-- start photo -->
-                                    <div class="photo">
-                                        <img src="https://miro.medium.com/max/2200/1*4u4uD5FiSkWdBNkRO6lVtQ.jpeg"
-                                            alt="UkieWeb">
-                                    </div>
-                                    <!-- end photo -->
-                                    <!-- start title post -->
-                                    <h3 class="title title-blog">React Js Projesi nasil github pages ile host
-                                        edilebilir?</h3>
-                                    <!-- end title post -->
-
-                                    <!-- start desc post -->
-                                    <p>
-                                        Hellö. Bu yazida basima gelen bir olayi not etmeyi hedefliyorum. Baslik bu konu
-                                        icin gayet aciklayici.
-                                    </p>
-                                    <!-- end desc post -->
-                                    <a href="https://medium.com/@atakansava/react-js-projesi-nasil-github-pages-ile-host-edilebilir-88f83a3a7326"
-                                        class="btn hover-animate btn-color-hover">Read More</a>
-                                </div>
-                                <!-- end post -->
-
-
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-lg-6">
-                                <!-- start post -->
-                                <div class="post last">
-                                    <!-- start photo -->
-                                    <div class="photo">
-                                        <img src="https://cdn-images-1.medium.com/max/1200/1*FbzQStUzSsLChBJE9108hg.png"
-                                            alt="UkieWeb">
-                                    </div>
-                                    <!-- end photo -->
-                                    <!-- start title post -->
-                                    <h3 class="title title-blog">asp.net — postgresql — google maps connection</h3>
-                                    <!-- end title post -->
-
-                                    <!-- start desc post -->
-                                    <p>
-                                        Hi all. There is another story. In this story, i will try to connect google maps
-                                        to postgresql with asp.net mvc project.
-                                    </p>
-                                    <!-- end desc post -->
-                                    <a href="https://medium.com/@atakansava/asp-net-postgresql-google-maps-connection-98dc15626536"
-                                        class="btn hover-animate btn-color-hover">Read More</a>
-                                </div>
-                                <!-- end post -->
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                        <!-- start row -->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12 text-center btn-center">
-                                <a href="https://medium.com/@atakansava"
-                                    class="btn hover-animate btn-color-hover">Blog page</a>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end container -->
-                </div>
-            </section>
-            <!-- End Blog section -->
-
-            <!-- Start Footer section -->
-            <footer class="footer">
-                <!-- start container -->
-                <div class="container">
-                    <!-- start row -->
-                    <div class="row">
-                        <!-- start email -->
-                        <div class="col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#"
-                                class="hover-animate">
-                                <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span>
-                                a.savas@hotmail.com.tr
-                            </a>
-                        </div>
-                        <!-- end email -->
-                        <!-- start address -->
-                        <div class="col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#"
-                                class="hover-animate">
-                                <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Istanbul
-                                / Turkey
-                            </a>
-                        </div>
-                        <!-- end address -->
-
-                        <!-- start Copyright -->
-                        <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
-                            <span class="copyright">My online resume site. Thank you all.</span>
-                        </div>
-                        <!-- end Copyright -->
-                    </div>
-                    <!-- end row -->
-                </div>
-                <!-- end container -->
-            </footer>
-            <!-- End Footer section -->
-
-        </div>
+  <div class="section">
+    <!--Education-->
+    <div class="section-title">
+      <h3>Info</h3>
     </div>
 
-    <!-- Scroll to Top -->
-    <a href="#"
-        class="btn hover-animate scrollToTop"><i class="fa fa-angle-up"></i></a>
-    <!-- End Scroll to Top -->
-    <!-- Scripts -->
-    <script src="assets/js/jquery-1.11.2.min.js"
-        type="text/javascript"></script>
-    <script src="assets/boostrap-files/js/bootstrap.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.appear.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.mixitup.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/owl.carousel.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.flexslider-min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.inview.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.knob.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.cookie.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.countTo.js"
-        type="text/javascript"></script>
-    <script src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"
-        type="text/javascript"></script>
-    <script src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"
-        type="text/javascript"></script>
-    <script src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"
-        type="text/javascript"></script>
-    <script src="assets/js/portfolio_scripts.js"
-        type="text/javascript"></script>
-    <script src="assets/js/jquery.ratyli.js"
-        type="text/javascript"></script>
-    <script src="assets/js/modernizr.custom.js"
-        type="text/javascript"></script>
-    <script src="assets/js/prefixfree.min.js"
-        type="text/javascript"></script>
-    <script src="assets/js/modernizr.js"
-        type="text/javascript"></script>
-    <script src="assets/js/scripts.js"
-        type="text/javascript"></script>
+    <div class="section-body">
+      Software technologies, jokes, gis operations, brainstorming,
+      backend, smiling, frontend, travel. Im not in love
+      with any language. Developing software is not
+      necessarily about adopting solid or tdd principles,
+      choosing to distributed architecture or
+      making jenkins-octopus connections.
+      <br />
+      A healthy mind in a healthy body.
+      <span class="section-qualifier">I hope, one day i can fly.</span>
+    </div>
+  </div>
 
+  <br />
+
+  <div class="section">
+    <!--Employment-->
+    <div class="section-title">
+      <h3>Work Experience</h3>
+    </div>
+
+    <div class="section-head">
+      <span>Senior Software Developer</span><span>Kariyer.Net</span><span>Oct 2021 - ....</span>
+    </div>
+    <div class="section-body">
+      <p>Kariyer.net started a new project called 'HrVenue'. It helps to async interviews. Candidates can record
+        themselves while
+        answering questions asked by HR. I took part of HrVenue project as a full stack developer.</p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developing .net projects with using C#, .Net 5 or above, CQRS, DDD.</li>
+        <li>Developing Front End projects with ReactJs and VueJs.</li>
+        <li>Worked with cloud services. (Azure)</li>
+        <li>Be able to implementation new technologies.</li>
+        <li>Being part of agile scrum team with 3 people.</li>
+        <li>Working with Domain Driven Design (CQRS) and Mediatr Pattern.</li>
+        <li>Working with Mssql and Redis.</li>
+        <li>Deployment pipeline maintenance. Monitoring live systems.</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>Developing back end services with following Mediator Pattern (CQRS) and Domain Driven Design (DDD)
+          development. I
+          implemented generic functionalities for each layer.</li>
+        <li>Beign part of micro front end project which uses in Kariyer.Net ATS (Application Tracking System).</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, .Net 5, CQRS, DDD, Mediator Pattern, Mediatr Pattern</li>
+        <li>Javascript, ReactJs, VueJs, Tailwind, Scrum, Agile, Documentation</li>
+        <li>Sentry, Postgresql, Azure DevOps, Code Review</li>
+      </ul>
+    </div>
+    <hr />
+
+    <div class="section-head">
+      <span>Software Engineer</span><span>Multinet Inventiv</span><span>Oct 2020 - Mar 2021</span>
+    </div>
+    <div class="section-body">
+      <p>Inventiv is a Multinet Group company serving in FinTech sector. I was part of 'Buddy' and 'Gateway' projects.
+        'Buddy' is a mobile app which helps to give feedbacks for colleagues. 'Gateway' projects are, gateway between 3
+        mobile app and 3 rest
+        services.</p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developing in .Net and .Net Core projects using C#, OOP and Mssql.</li>
+        <li>Being part of self-organized scrum team with 5 people.</li>
+        <li>Maintenance and bug fix live versions of softwares and monitoring it.</li>
+        <li>Advanced knowledge in Sql, .Net MVC, Rest Services.</li>
+        <li>Deployment pipeline maintenance.</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>To provide communication and data consistency between microservice projects.</li>
+        <li>Improved unit test coverage in projects with good documentation.</li>
+        <li>Improvements in CI/CD bash commands.</li>
+        <li>Help to find and fix bugs.</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, .Net Core, Monolist architecture, Mssql.</li>
+        <li>Redis, Sonarqube, Jenkins, N-Tier Architecture, Gateway</li>
+      </ul>
+    </div>
+    <hr />
+
+    <div class="section-head">
+      <span>Software Development Specialist</span><span>Kariyer.Net</span><span>Jun 2018 - Sep 2020</span>
+    </div>
+    <div class="section-body">
+      <p>Kariyer.net is a company serving in employment sector. People can find jobs with using filters or companies can
+        reach
+        eligible candidate also using extended filter system. I was part of Application Tracking System team as a back
+        end
+        developer.
+      </p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developing .net rest services using C#, Net Core, OOP, MEF and maintaining live applications.</li>
+        <li>Be able to implementation new technologies.</li>
+        <li>Being part of self-organized scrum team with 10 people.</li>
+        <li>Working with distributed cache systems like Redis and well-known stateless applications.</li>
+        <li>Working with Elastic Search and other nosql databases.</li>
+        <li>Deployment pipeline maintenance. Monitoring live systems.</li>
+        <li>Working with at least 2 different sql database technologies. (Mssql - Postgresql)</li>
+        <li>Work with queue technologies like RabbitMq, Kafka.</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>Take a responsibility in microservices transformation.</li>
+        <li>Be part of migration team member which transforms to new version of ATS.</li>
+        <li>Improvements in CI/CD bash commands.</li>
+        <li>Help ElasticSearch query and schema improvements.</li>
+        <li>Help to find and fix bugs.</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, .Net Core, Distributed architecture, Mssql, Postgresql.</li>
+        <li>Redis, Elastic Search, NewRelic, Sonarqube, Jenkins, Octopus</li>
+        <li>Dependency injection(MEF), Sentry, Nodejs, TDD, DDD, N-Tier Architecture, N-Layer Architecture, RabbitMq,
+          Kafka, Code Reviews
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="section-head">
+      <span>Software Engineering Specialist</span><span>Improde</span><span>Sep 2016 - Jun 2018</span>
+    </div>
+    <div class="section-body">
+      <p>Improde is a company serving in the construction industry. I took full stack developer role in
+        "imarsorgulama.com" project. This project can detect illegal construction and can show results with 3D model
+        using Cesium. In B2C side, users need to pay for seeing that results.</p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developing full-stack web applications in .net framework using C#, OOP and Javascript.</li>
+        <li>Learning new frameworks and technologies including GeoServer and Jetty.</li>
+        <li>Working with several database systems. (MsSql - PostgreSql) Using geometry types in database.</li>
+        <li>Developing rest services for external integrations.</li>
+        <li>Deployment and maintenance servers.</li>
+        <li>Business management with kanban.</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>Developed a project N-Tier Architecture which has 2 different presentation project.</li>
+        <li>Created user friendly B2C project using Javascript ES5, Jquery, Bootstrap. </li>
+        <li>Also with using these libraries, created B2B project with N-Layer architecture.</li>
+        <li>Developed a Map Page for showing results in different types. For some cases map need to turn from 2D to 3D
+          view. Thats for, software also needs to calculate altitude of geometry's(Z Coordinate).</li>
+        <li>Deployment to live and maintenance server.</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, C#, Soap, Rest, MsSql, MySql, Postgresql, IIS</li>
+        <li>MVC, OOP, Solid Principles, Javascript, Jquery, AngularJs, CesiumJs, Openlayers</li>
+        <li>Git, N-Tier Architecture, N-Layer Architecture, Postman, Trello</li>
+      </ul>
+    </div>
+
+    <hr />
+
+
+    <div class="section-head">
+      <span>Software Engineering</span><span>Xeus Media</span><span>Oct 2015 - Sep 2016</span>
+    </div>
+    <div class="section-body">
+      <p>Xeus Media Technology is a company serving in the broadcasting sector. Has multiple products like Playout,
+        CG(Character
+        Generator) or Scheduler etc. I took part of recreating existing software.</p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developed full-stack web and windows applications.</li>
+        <li>Distributed softwares which uses TCP/IP for communication.</li>
+        <li>Maintenance local network.</li>
+        <li>Liaised with new developers and director as needed.</li>
+        <li>Working with several database systems. (Mssql - Mysql).</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>Created a web client works with TCP/IP and Signalr.</li>
+        <li>Created an Android client works with TCP/IP with Java.</li>
+        <li>Created Character Generator project which has using like Photoshop with using WPF.
+          I choose WPF because of customizable user interface.</li>
+        <li>Created POC with Xamarin.</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, Windows Application, .Net WCF, .Net WPF, MsSql, MySql</li>
+        <li>MVC, OOP, Javascript, Jquery, AngularJs, TFS, Trello</li>
+        <li>TCP/IP, LAN, Signalr, Java, Xamarin.</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="section-head">
+      <span>Software Engineering</span><span>Wttech</span><span>Feb 2014 - Sep 2015</span>
+    </div>
+    <div class="section-body">
+      <p>Wttech is a company which selling online flight tickets. Designing B2C and B2B structure from the beginning and
+        developing financial infrastructure. I joined team while they started coding of new version. Project created by
+        following N-Tier architecture. I took part in B2B and B2C projects.</p>
+
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Developed full-stack web and windows applications.</li>
+        <li>Deployments of projects and maintenance of servers.</li>
+        <li>Manage and profile web site with IIS.</li>
+        <li>Help database structure and management.</li>
+      </ul>
+
+      <p>Key Achievements</p>
+      <ul>
+        <li>Developed a integration between IT and accounting platforms.</li>
+        <li>Developed a payment microservice which works with all banks. Microservice uses same database with main
+          project.</li>
+      </ul>
+
+      <p>Tech Details</p>
+      <ul>
+        <li>.Net Framework, .C#, .Net MVC, N-Tier Architecture, Windows Application, .Net WCF, MsSql</li>
+        <li>Web Forms, MVC, OOP, Javascript, Jquery, TFS, Jira, Kanban</li>
+        <li>IIS, Windows Server</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="section-head">
+      <span>Intern</span><span>Turk Telekom</span><span>Sep 2010 - Jun 2010</span>
+    </div>
+    <div class="section-body">
+      <p>
+        Turk Telekom is biggest telecommunication company in Turkey.
+      </p>
+      <p>Key Qualifications & Responsibilities</p>
+      <ul>
+        <li>Maintenance for local network. </li>
+        <li>Repairing broken computers.</li>
+        <li>Created small windows application for managing accounting.</li>
+      </ul>
+    </div>
+    <!--section-body-->
+  </div>
+
+  <div class="section">
+    <!--Education-->
+    <div class="section-title">
+      <h3>Projects</h3>
+    </div>
+    <div class="section-head">
+      <span>Kuryem</span> <span>Web + Cloud + Mobile</span> <span>2020</span>
+    </div>
+    <div class="section-body">
+      <p>Kuryem is a new generation smart logistics chain that brings together registered couriers and individual or
+        corporate
+        senders. Chose send and receiver addresses, package and courier type. After payment, a registered courier will
+        accept
+        your package. After a successfully delivery, courier gets its share.
+      </p>
+      <p>
+        Project has;
+      <ul>
+        <li>1 web client written by VueJs for users can use</li>
+        <li>1 mobile app written by React Native with Expo for users</li>
+        <li>1 mobile app written by React Native with Expo for couriers can use</li>
+        <li>1 management panel written by ReactJs for admin users,</li>
+        <li>9 backend services written by Javascript <span class="comment">//NodeJs, Aws Lambda, DocumentDb</span></li>
+      </ul>
+      </p>
+      <p>
+        Key Achievements
+      <ul>
+        <li>All backend and web projects works in AWS Lambda Functions. For CI/CD, i used Serverless Framework.</li>
+        <li>I used NodeJs, Pipeline Pattern, DDD, Fastify, Sentry, Github, Custom Packages for backend services.</li>
+        <li>I grouped similar domains in to a project. For common helpers and services, i created a github package. With
+          this, i can
+          create or modify so easly my services.</li>
+        <li>AWS DocumentDb for database. Works with multiple environment.</li>
+        <li>We used Expo for the conveniences that gives us. HotReload, Mobile Debugging, Notification, Location etc.
+        </li>
+        <li>In mobile apps, Redux helped us to state management.</li>
+        <li>In management panel, admin users can update any data or calculation types. For if needed, user can refund or
+          cancel
+          payments. There are 3 different reports for monitoring system status.</li>
+      </ul>
+      </p>
+      <p>
+        Tech Details
+      <ul>
+        <li>Javascript, NodeJs, ReactJs, React Native, VueJs, MongoDb, DocumentDb</li>
+        <li>AWS Services, AWS Lambda, AWS Api Gateway, AWS DocumentDb, AWS DynamoDb, AWS CloudFront</li>
+        <li>Expo, Redux, Serverless Framework, App Store, Google Play, Trello, Docker, Heroku, YAML, Serverless</li>
+        <li>Fastify, Sentry, CORS, JWT, OOP, DDD, Generic Repository</li>
+      </ul>
+      </p>
+    </div>
+
+    <div class="section-head">
+      <span>BiSesVar</span> <span>Application</span> <span>2017</span>
+    </div>
+    <div class="section-body">
+      <p>BisesVar is a mobile app created with apache cordova. It connects with a backend also written by me.
+        It stores some sounds, voice records from famous people. Users can listen or share that sounds. App also
+        contains advanced filter options.
+      </p>
+      <p>I made this project for fun. <span class="comment">//joke! main objective is practicing javascript :></span>
+      </p>
+      <ul>
+        <li>Apache Cordova, Javascript ES5, Framework 7, Ajax Control Toolkit </li>
+        <li>.Net, C#, .Net MVC, .Net Web Forms <span class="comment">//inf! with Jquery :></span></li>
+      </ul>
+    </div>
+
+    <div class="section-head">
+      <span>Character Generator</span> <span>Application</span> <span>2016 @XeusMedia</span>
+    </div>
+    <div class="section-body">
+      <p>Character Generator (CG) is a windows application written using with WPF by me. I choose WPF for advanced user
+        friendly
+        UI. CG applications needs to advanced work zone like Photoshop. Users can drag and drop items like label, crawl
+        text,
+        animation, logo or timer etc. from item explorer to work zone. Application will send all changes to
+        server using
+        with TCP/IP.
+      </p>
+      <p>I also write core service which this CG app connects with TCP/IP.</p>
+      <ul>
+        <li>.Net Framework, C#, WPF, OOP. <span class="comment">//inf! following SOLID Principles</span></li>
+        <li>TCP/IP, UDP, XML, Xamarin. </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <!--Education-->
+      <div class="section-title">
+        <h3>Education</h3>
+      </div>
+      <div class="section-head">
+        <span>Management Information Systems</span><span>Anadolu University</span><span>2017 - ....</span>
+      </div>
+      <div class="section-body">
+        <p>Bachelor's Degree. Distance education.
+        </p>
+      </div>
+      <div class="section-head">
+        <span>Computer Programming</span><span>Sakarya University</span><span>2012 - 2014</span>
+      </div>
+      <div class="section-body">
+        <p>Associate's Degree. I learned algorithm, data management systems. I was also working while going to school.
+          <span class="comment">//joke! hard times</span>
+        </p>
+
+      </div>
+      <!-- <div class="section-head">
+      <span>Bexley, Ohio</span><span>Sakarya University</span><span>2012 - 2014</span>
+    </div>
+    <div class="section-body">
+      <ul>
+        <li><span class="section-qualifier">Major:</span> B.A. Computer Science (GPA: 3.8; Summa Cum Laude honors)</li>
+        <li><span class="section-qualifier">Programming Coursework:</span> Algorithms & Data Structures,
+          Database Systems, Programming Languages, Comp. Architecture, Operating Systems, Software Engineering,
+          Networking, Graphics, Parallel Comp., Artificial Intelligence</li>
+      </ul>
+    </div> -->
+    </div>
+
+    <div class="section">
+      <!--Skills-->
+      <div class="section-title">
+        <h3>Skills</h3>
+      </div>
+      <div class="section-body">
+        <p><span class="section-qualifier">Programming: </span>
+          (<span class="proficiency">backend</span>): C#.Net, MVC, NodeJs, PHP, ASP
+          (<span class="proficiency">frontend</span>): ReactJs, VueJs, Jquery
+          (<span class="proficiency">other</span>): React Native, TypeScript</p>
+
+        <p><span class="section-qualifier">Tools: </span>
+          Git, GeoServer, AWS Cloud Services, Serverless, Expo</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <!--Skills-->
+      <div class="section-title">
+        <h3>Contact</h3>
+      </div>
+      <div class="section-body">
+        <p>
+          <a href="https://www.linkedin.com/in/hiata/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/atakansavas" target="_blank">Github</a>
+          <a href="https://medium.com/@atakansava" target="_blank">Medium</a>
+          <a href="https://open.spotify.com/user/11128743162?si=d77427acf1fc478c" target="_blank">Spotify</a>
+          <a href="https://stackoverflow.com/users/5620868/atakan-sava%C5%9F" target="_blank">StackOverFlow</a>
+        </p>
+      </div>
+    </div>
 </body>
 
 </html>
