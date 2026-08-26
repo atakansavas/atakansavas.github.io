@@ -1,10 +1,7 @@
-
 ## atakansavas.github.io
 
-Bu proje kisisel sayfamdir. Online cv olarak kullanmayi hedefledim.
+Bu repo eski online CV sayfamdı (2019–2024). Artık güncel tutulmuyor.
 
-Icerisindeki metinler elle degistirdigim, guncel tutmaya calistigim datalardir.
+Güncel site ve CV: **[benatakan.com](https://benatakan.com)**
 
-Projeyi kisisel isteklerim icin olusturdum.
-
-## https://atakansavas.github.io/
+Bu adres artık otomatik olarak benatakan.com'a yönlendiriyor.
